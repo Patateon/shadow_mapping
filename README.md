@@ -1,7 +1,7 @@
-# shadow_mapping
+# Shadow Mapping
 Implémentation basique d'un shadow mapping avec biais et front-face culling
 
-# utilisation
+# Utilisation
 Dans /BaseGL
 
 Build :
