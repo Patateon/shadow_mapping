@@ -612,8 +612,8 @@ void initScene (const string & meshFilename) {
             float s1_max = +meshRadius;
             float s2_min = dot(planeMeshCenter - meshCenter,axis) - planeMeshRadius;
             float s2_max = dot(planeMeshCenter - meshCenter,axis) + planeMeshRadius;
-            float s_min = min<float>(s1_min , s2_min);
-            float s_max = max<float>(s1_max , s2_max);
+            float s_min = glm::min<float>(s1_min , s2_min);
+            float s_max = glm::max<float>(s1_max , s2_max);
             float s_center = (s_min + s_max)/2.0;
             scene.scene_center = meshCenter + s_center * axis;
             scene.scene_radius = s_max - s_center;
